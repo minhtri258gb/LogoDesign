@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" version="1.1">
+	<style>
+		.frameOutLeft {
+			animation-name: LeftAnim;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			animation-delay: 0s;
+		}
+		.frameOutRight {
+			animation-name: RightAnim;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			animation-delay: 0s;
+		}
+		.frameIn {
+			animation-name: MidAnim;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			transform-origin: 50% 50%;
+		}
+		.head {
+			animation-name: HeadAnim;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			transform-origin: 50% 50%;
+		}
+		@keyframes LeftAnim {
+			0%   { transform: translateX(  0px); opacity: 1.0; }
+			10%  { transform: translateX(  0px); opacity: 1.0; }
+			25%  { transform: translateX(-40px); opacity: 0.2; }
+			40%  { transform: translateX(  0px); opacity: 1.0; }
+			60%  { transform: translateX(  0px); opacity: 1.0; }
+			75%  { transform: translateX(-40px); opacity: 0.2; }
+			90%  { transform: translateX(  0px); opacity: 1.0; }
+			100% { transform: translateX(  0px); opacity: 1.0; }
+		}
+		@keyframes RightAnim {
+			0%   { transform: translateX( 0px); opacity: 1.0; }
+			10%  { transform: translateX( 0px); opacity: 1.0; }
+			25%  { transform: translateX(40px); opacity: 0.2; }
+			40%  { transform: translateX( 0px); opacity: 1.0; }
+			60%  { transform: translateX( 0px); opacity: 1.0; }
+			75%  { transform: translateX(40px); opacity: 0.2; }
+			90%  { transform: translateX( 0px); opacity: 1.0; }
+			100% { transform: translateX( 0px); opacity: 1.0; }
+		}
+		@keyframes MidAnim {
+			0%   { transform: rotate(  0deg) scale(1.0); }
+			10%  { transform: rotate(  0deg) scale(1.0); }
+			25%  { transform: rotate( 90deg) scale(0.8); }
+			40%  { transform: rotate(180deg) scale(1.0); }
+			60%  { transform: rotate(180deg) scale(1.0); }
+			75%  { transform: rotate(270deg) scale(0.8); }
+			90%  { transform: rotate(360deg) scale(1.0); }
+			100% { transform: rotate(360deg) scale(1.0); }
+		}
+		@keyframes HeadAnim {
+			0%   { transform: translateY(  0px) rotate(360deg) scale(1.0); }
+			10%  { transform: translateY(  0px) rotate(360deg) scale(1.0); }
+			25%  { transform: translateY(-10px) rotate(270deg) scale(0.6); }
+			40%  { transform: translateY(-20px) rotate(180deg) scale(1.0); }
+			60%  { transform: translateY(-20px) rotate(180deg) scale(1.0); }
+			75%  { transform: translateY(-10px) rotate( 90deg) scale(0.6); }
+			90%  { transform: translateY(  0px) rotate(  0deg) scale(1.0); }
+			100% { transform: translateY(  0px) rotate(  0deg) scale(1.0); }
+		}
+	</style>
+	<path class="background" fill="black" d="M 0 0 H 512 V 512 H 0 Z"/>
+	<path class="frameOutLeft" fill="#808080" fill-opacity="0.5" d="M 100 256 L 212 84 L 223 101 L 122 256 L 223 414 L 212 428 Z"/>
+	<path class="frameOutRight" fill="#808080" fill-opacity="0.5" d="M 412 256 L 300 84 L 289 101 L 390 256 L 289 414 L 300 428 Z"/>
+	<path class="frameIn" fill="#808080" fill-opacity="0.75" d="M 256 84 L 144 256 L 256 428 L 368 256"/>
+	<g class="head">
+		<path fill="#D7D7D7" stroke="#000000" d="M 252 166 A 74 74 0 0 0 193 279 M 260 166 A 74 74 0 0 1 319 279"/>
+		<path fill="#000000" d="M 253 172 A 68 68 0 0 0 204 284 M 259 172 A 68 68 0 0 1 308 284"/>
+		<path fill="#D7D7D7" stroke="#000000" d="M 183 282 A 123 172 0 0 0 250 152 L 253 172 L 256 152 L 259 172 L 262 152 A 123 172 0 0 0 329 282 V 296 H 183 Z"/>
+		<path fill="#FFFFFF" stroke="#000000" d="M 192 282 A 123 172 0 0 0 248 194 L 264 194 A 123 172 0 0 0 320 282 Z"/>
+	</g>
+</svg>
